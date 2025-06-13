@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ personal, activeSection, onSectionChang
             <div className="w-52 h-52 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1 shadow-2xl transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
               <img
                 src={personal.avatar}
-                alt={personal.name}
+                alt="Avatar"
                 className="w-full h-full rounded-full object-cover transition-all duration-300 group-hover:brightness-110"
               />
             </div>

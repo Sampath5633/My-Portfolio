@@ -1,0 +1,129 @@
+{
+  "personal": {
+    "name": "Sampath Kumar B",
+    "title": "Fresher - Engineering Student",
+    "email": "bsampath563@gmail.com",
+    "phone": "+91 8217741448",
+    "address": "Basaweshwara nagar, 2 cross near sangameshwara Temple",
+    "linkedin": "http://www.linkedin.com/in/sampathkumar563",
+    "github": "https://github.com/Sampath563",
+    "avatar": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+  },
+  "about": {
+    "description": "I'm an Engineering student specialized in CSE.AI (Artificial Intelligence). I consider myself oriented individual with a passion for learning and problem solving.",
+    "highlights": [
+      "Engineering Student specialized in CSE.AI",
+      "Passionate about Artificial Intelligence",
+      "Problem-solving oriented mindset",
+      "Continuous learner"
+    ]
+  },
+  "education": [
+    {
+      "id": "college",
+      "institution": "Ballari Institute of Technology and Management",
+      "degree": "B.E in Computer Science Engineering (AI)",
+      "duration": "2022-2026",
+      "score": "CGPA: 9.16",
+      "type": "Undergraduate"
+    },
+    {
+      "id": "intermediate",
+      "institution": "Sri Chaitanya College",
+      "degree": "Intermediate",
+      "duration": "2020-2022",
+      "score": "Percentage: 74.16%",
+      "type": "Intermediate"
+    },
+    {
+      "id": "school",
+      "institution": "Sri Chaitanya Techno School",
+      "degree": "SSLC",
+      "duration": "2019-2020",
+      "score": "Percentage: 55%",
+      "type": "School"
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "C", "C++"],
+    "coursework": ["DSA", "MySQL"],
+    "tools": ["VS Code", "PyCharm"],
+    "softSkills": ["Communication Skills", "Teamwork", "Leadership"]
+  },
+  "projects": [
+    {
+      "id": "parking",
+      "name": "Parking Management System",
+      "description": "A comprehensive system for managing parking spaces with real-time availability tracking",
+      "technologies": ["Python", "Database Management"],
+      "features": [
+        "Real-time parking space tracking",
+        "Automated billing system",
+        "User-friendly interface",
+        "Report generation"
+      ]
+    },
+    {
+      "id": "bus",
+      "name": "Bus Reservation System",
+      "description": "Online bus ticket booking system with seat selection and payment integration",
+      "technologies": ["Programming", "Database"],
+      "features": [
+        "Online ticket booking",
+        "Seat selection interface",
+        "Payment processing",
+        "Booking management"
+      ]
+    },
+    {
+      "id": "attendance",
+      "name": "Attendance using Face Recognition",
+      "description": "AI-powered attendance system using facial recognition technology",
+      "technologies": ["Python", "AI/ML", "Computer Vision"],
+      "features": [
+        "Facial recognition technology",
+        "Automated attendance marking",
+        "Real-time processing",
+        "Attendance reports"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "id": "internship",
+      "name": "Internship Certificate - Data Structures with Python",
+      "issuer": "Technology Company",
+      "description": "Completed internship focused on implementing data structures using Python"
+    },
+    {
+      "id": "python",
+      "name": "Python Foundation Certification",
+      "issuer": "Certification Body",
+      "description": "Fundamental Python programming concepts and applications"
+    },
+    {
+      "id": "java-dsa",
+      "name": "Data Structures and Algorithms using Java",
+      "issuer": "Educational Institution",
+      "description": "Advanced DSA concepts implemented in Java programming language"
+    },
+    {
+      "id": "dsa",
+      "name": "Data Structures and Algorithms",
+      "issuer": "Educational Platform",
+      "description": "Core concepts of data structures and algorithmic problem solving"
+    }
+  ],
+  "languages": [
+    { "name": "English", "proficiency": "Professional" },
+    { "name": "Hindi", "proficiency": "Professional" },
+    { "name": "Kannada", "proficiency": "Native" },
+    { "name": "Telugu", "proficiency": "Native" }
+  ],
+  "interests": [
+    { "name": "Playing Chess", "icon": "♟️" },
+    { "name": "Drawing", "icon": "🎨" },
+    { "name": "Listening Music", "icon": "🎵" },
+    { "name": "Playing Volleyball", "icon": "🏐" }
+  ]
+}

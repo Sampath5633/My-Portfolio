@@ -17,7 +17,7 @@ function App() {
   // ⬇️ Injecting the avatar image manually since it's in public folder
   const personalWithAvatar = {
     ...portfolioData.personal,
-    avatar: '/My-Portfolio/assets/avatar.jpg',
+    avatar: '/assets/avatar.jpg',
 
   };
 

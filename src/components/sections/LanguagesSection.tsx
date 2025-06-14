@@ -15,7 +15,7 @@ const LanguagesSection: React.FC<LanguagesSectionProps> = ({ languages }) => {
     switch (proficiency) {
       case 'Native': return 'from-green-600 to-emerald-600';
       case 'Professional': return 'from-blue-600 to-cyan-600';
-      case 'Conversational': return 'from-yellow-600 to-orange-600';
+      case 'Basic': return 'from-yellow-600 to-orange-600';
       default: return 'from-gray-600 to-slate-600';
     }
   };

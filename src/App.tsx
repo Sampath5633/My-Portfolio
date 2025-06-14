@@ -9,7 +9,7 @@ import CertificatesSection from './components/sections/CertificatesSection';
 import InterestsSection from './components/sections/InterestsSection';
 import LanguagesSection from './components/sections/LanguagesSection';
 import portfolioData from './data/portfolio.json';
-
+import CustomCursor from './components/CustomCursor'; // ✅ Add this line
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -18,7 +18,6 @@ function App() {
   const personalWithAvatar = {
     ...portfolioData.personal,
     avatar: '/assets/avatar.jpg',
-
   };
 
   const renderSection = () => {
@@ -44,6 +43,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <CustomCursor /> {/* ✅ Inject Custom Cursor */}
+      
       <Header
         personal={personalWithAvatar}
         activeSection={activeSection}

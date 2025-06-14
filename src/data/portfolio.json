@@ -116,9 +116,9 @@
   ],
   "languages": [
     { "name": "English", "proficiency": "Professional" },
-    { "name": "Hindi", "proficiency": "Professional" },
     { "name": "Kannada", "proficiency": "Native" },
-    { "name": "Telugu", "proficiency": "Native" }
+    { "name": "Hindi", "proficiency": "Basic" },
+    { "name": "Telugu", "proficiency": "Basic" }
   ],
   "interests": [
     { "name": "Playing Chess", "icon": "♟️" },

@@ -1,23 +1,26 @@
 // src/components/CustomCursor.tsx
-import React, { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 const CustomCursor = () => {
-  const cursorRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const moveCursor = (e: MouseEvent) => {
-      const cursor = cursorRef.current;
-      if (cursor) {
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-      }
+    const dot = document.createElement('div');
+    dot.className = 'custom-cursor-dot';
+    document.body.appendChild(dot);
+
+    const move = (e: MouseEvent) => {
+      dot.style.left = `${e.clientX}px`;
+      dot.style.top = `${e.clientY}px`;
     };
 
-    window.addEventListener('mousemove', moveCursor);
-    return () => window.removeEventListener('mousemove', moveCursor);
+    document.addEventListener('mousemove', move);
+
+    return () => {
+      document.removeEventListener('mousemove', move);
+      document.body.removeChild(dot);
+    };
   }, []);
 
-  return <div ref={cursorRef} className="custom-cursor-dot" />;
+  return null;
 };
 
 export default CustomCursor;

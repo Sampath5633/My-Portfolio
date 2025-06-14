@@ -10,13 +10,14 @@ import InterestsSection from './components/sections/InterestsSection';
 import LanguagesSection from './components/sections/LanguagesSection';
 import portfolioData from './data/portfolio.json';
 
+
 function App() {
   const [activeSection, setActiveSection] = useState('about');
 
   // ⬇️ Injecting the avatar image manually since it's in public folder
   const personalWithAvatar = {
     ...portfolioData.personal,
-    avatar: `${import.meta.env.BASE_URL}assets/avatar.jpg`,
+    avatar: '/My-Portfolio/assets/avatar.jpg',
 
   };
 

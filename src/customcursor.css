@@ -1,0 +1,77 @@
+.custom-cursor {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(145deg, #7b2ff7, #f107a3);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+.custom-cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ffff, #ff00cc, #ffff00);
+  background-size: 300% 300%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  animation: cursorColorShift 5s ease infinite;
+  box-shadow:
+    0 0 6px #00ffff,
+    0 0 12px #ff00cc,
+    0 0 18px #ffff00;
+}
+
+@keyframes cursorColorShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 0, 0.7),     /* Bright Green */
+    rgba(0, 255, 153, 0.5),   /* Mint */
+    rgba(0, 255, 255, 0.5),   /* Cyan */
+    rgba(255, 102, 0, 0.5),   /* Orange */
+    rgba(255, 77, 77, 0.5),   /* Red */
+    rgba(255, 0, 204, 0.5),   /* Pink */
+    rgba(52, 152, 219, 0.5)   /* Blue */
+  );
+  background-size: 1000% 1000%;
+  animation: cursorColorShift 9s ease-in-out infinite;
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 0, 0.4),       /* Green glow */
+    0 0 25px rgba(0, 255, 0, 0.5),       /* Bright green */
+    0 0 40px rgba(0, 255, 153, 0.5),     /* Mint glow */
+    0 0 60px rgba(0, 255, 0, 0.6);       /* Outer green pulse */
+
+  transition: background 0.6s ease, box-shadow 0.6s ease;
+}
+
+@keyframes cursorColorShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

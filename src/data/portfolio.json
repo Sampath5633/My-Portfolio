@@ -98,20 +98,21 @@
     {
       "id": "python",
       "name": "Python Foundation Certification",
-      "issuer": "Certification Body",
+      "issuer": "Infosys Certification",
       "description": "Fundamental Python programming concepts and applications"
-    },
-    {
-      "id": "java-dsa",
-      "name": "Data Structures and Algorithms using Java",
-      "issuer": "Educational Institution",
-      "description": "Advanced DSA concepts implemented in Java programming language"
     },
     {
       "id": "dsa",
       "name": "Data Structures and Algorithms",
-      "issuer": "Educational Platform",
+      "issuer": "Educational Institution",
       "description": "Core concepts of data structures and algorithmic problem solving"
+    },
+    {
+      "id": "AWS",
+      "name": "AWS cloud Practitioner Essentials",
+      "issuer": "Infosys Certification",
+      "description": "Advanced DSA concepts implemented in Java programming language"
+      
     }
   ],
   "languages": [

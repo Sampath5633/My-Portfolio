@@ -24,7 +24,7 @@ const LanguagesSection: React.FC<LanguagesSectionProps> = ({ languages }) => {
     switch (proficiency) {
       case 'Native': return 5;
       case 'Professional': return 4;
-      case 'Conversational': return 3;
+      case 'Basic': return 3;
       default: return 2;
     }
   };

@@ -52,6 +52,19 @@
   },
   "projects": [
     {
+    "id": "medica",
+    "name": "Medica System",
+    "description": "An AI-powered health diagnosis and treatment planner system that utilizes multiple machine learning models and APIs to analyze symptoms and recommend treatments.",
+    "technologies": ["Python", "MongoDB", "Flask API", "Machine Learning", "React"],
+    "features": [
+      "Multi-model disease prediction system",
+      "Treatment recommendation engine",
+      "RESTful API integration for frontend/backend communication"
+    ],
+    "link": "https://medica-3.netlify.app/login"
+  },
+    
+    {
       "id": "parking",
       "name": "Parking Management System",
       "description": "A comprehensive system for managing parking spaces with real-time availability tracking",
@@ -64,17 +77,18 @@
       ]
     },
     {
-      "id": "bus",
-      "name": "Bus Reservation System",
-      "description": "Online bus ticket booking system with seat selection and payment integration",
-      "technologies": ["Programming", "Database"],
-      "features": [
-        "Online ticket booking",
-        "Seat selection interface",
-        "Payment processing",
-        "Booking management"
-      ]
-    },
+  "id": "crime-mapping",
+  "name": "Crime Mapping Location System",
+  "description": "A system to visualize and analyze crime incidents geographically, helping law enforcement and the public identify high-risk areas.",
+  "technologies": ["Python", "Database"],
+  "features": [
+    "Interactive crime maps with location markers",
+    "Filter by crime type, date, and severity",
+    "Data import from law enforcement databases"
+  ],
+  "link": "https://github.com/Sampath563/Crime-Mapping-Locations.git"
+}
+,
     {
       "id": "attendance",
       "name": "Attendance using Face Recognition",
@@ -89,32 +103,37 @@
     }
   ],
   "certificates": [
-    {
-      "id": "internship",
-      "name": "Internship Certificate - Data Structures with Python",
-      "issuer": "Technology Company",
-      "description": "Completed internship focused on implementing data structures using Python"
-    },
-    {
-      "id": "python",
-      "name": "Python Foundation Certification",
-      "issuer": "Infosys Certification",
-      "description": "Fundamental Python programming concepts and applications"
-    },
-    {
-      "id": "dsa",
-      "name": "Data Structures and Algorithms",
-      "issuer": "Educational Institution",
-      "description": "Core concepts of data structures and algorithmic problem solving"
-    },
-    {
-      "id": "AWS",
-      "name": "AWS cloud Practitioner Essentials",
-      "issuer": "Infosys Certification",
-      "description": "Advanced DSA concepts implemented in Java programming language"
-      
-    }
-  ],
+  {
+    "id": "internship",
+    "name": "Internship Certificate - Data Structures with Python",
+    "issuer": "Technology Company",
+    "description": "Completed internship focused on implementing data structures using Python",
+    "image": "/assets/python.jpg"
+
+  },
+  {
+    "id": "python",
+    "name": "Python Foundation Certification",
+    "issuer": "Infosys Certification",
+    "description": "Fundamental Python programming concepts and applications",
+    "image": "/assets/python-foundation.jpg"
+  },
+  {
+    "id": "dsa",
+    "name": "Data Structures and Algorithms",
+    "issuer": "Educational Institution",
+    "description": "Core concepts of data structures and algorithmic problem solving",
+    "image": "/assets/Datastructure.jpg"
+  },
+  {
+    "id": "AWS",
+    "name": "AWS cloud Practitioner Essentials",
+    "issuer": "Infosys Certification",
+    "description": "Advanced DSA concepts implemented in Java programming language",
+    "image": "/assets/cloud.jpg"
+  }
+]
+,
   "languages": [
     { "name": "English", "proficiency": "Professional" },
     { "name": "Kannada", "proficiency": "Native" },

@@ -6,6 +6,7 @@ interface CertificateItem {
   name: string;
   issuer: string;
   description: string;
+  image?: string;
 }
 
 interface CertificatesSectionProps {
@@ -81,16 +82,27 @@ const CertificatesSection: React.FC<CertificatesSectionProps> = ({ certificates 
                 </div>
                 
                 {selectedCertificate === certificate.id && (
-                  <div className="mt-4 pt-4 border-t border-gray-200 animate-fade-in">
-                    <div className={`p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg border border-yellow-200 hover:shadow-md transition-all duration-300 cursor-default`}>
-                      <h4 className="font-semibold text-yellow-800 mb-2 flex items-center gap-2">
-                        <Award className="w-4 h-4" />
-                        Description
-                      </h4>
-                      <p className="text-yellow-700 leading-relaxed">{certificate.description}</p>
-                    </div>
-                  </div>
-                )}
+  <div className="mt-4 pt-4 border-t border-gray-200 animate-fade-in space-y-4">
+    <div className="p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg border border-yellow-200 hover:shadow-md transition-all duration-300 cursor-default">
+      <h4 className="font-semibold text-yellow-800 mb-2 flex items-center gap-2">
+        <Award className="w-4 h-4" />
+        Description
+      </h4>
+      <p className="text-yellow-700 leading-relaxed">{certificate.description}</p>
+    </div>
+
+    {certificate.image && (
+      <div className="rounded-lg overflow-hidden border border-yellow-200 shadow-md">
+        <img
+          src={certificate.image}
+          alt={`${certificate.name} certificate`}
+          className="w-full object-cover"
+        />
+      </div>
+    )}
+  </div>
+)}
+
               </div>
             </div>
           );

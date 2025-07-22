@@ -106,8 +106,8 @@ const Header: React.FC<HeaderProps> = ({ personal, activeSection, onSectionChang
               </a>
 
               <a
-                href="/SAM-Resume.pdf"
-                download="Sampath_Resume.pdf"
+                href="/Sam_new.pdf"
+                download="Sam_Resume.pdf"
                 title="Download Resume"
                 className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-300 via-teal-400 to-indigo-500 hover:from-cyan-400 hover:to-indigo-600 text-white rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(34,211,238,0.6)] hover:shadow-[0_0_25px_rgba(99,102,241,0.8)] cursor-pointer group transform hover:-translate-y-1"
               >

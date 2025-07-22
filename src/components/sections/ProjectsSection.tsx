@@ -7,6 +7,7 @@ interface Project {
   description: string;
   technologies: string[];
   features: string[];
+  link?: string;
 }
 
 interface ProjectsSectionProps {
@@ -60,9 +61,23 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                     <h3 className="text-xl font-bold text-gray-800 hover:text-indigo-600 transition-colors duration-300">
                       {project.name}
                     </h3>
-                    <div className="ml-auto">
-                      <ExternalLink className="w-5 h-5 text-gray-400 hover:text-indigo-500 transition-colors duration-300" />
-                    </div>
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View Project"
+                        className="ml-auto"
+                        onClick={(e) => e.stopPropagation()} // Prevent card toggle on click
+                      >
+                        <ExternalLink className="w-5 h-5 text-gray-400 hover:text-indigo-500 transition-colors duration-300" />
+                      </a>
+                    ) : (
+                      <div className="ml-auto">
+                        <ExternalLink className="w-5 h-5 text-gray-300 cursor-not-allowed" />
+                      </div>
+                    )}
+
                   </div>
                   
                   <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
